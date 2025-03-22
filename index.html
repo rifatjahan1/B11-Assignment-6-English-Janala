@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English-Janala-Assignment-6-batch-1</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://kit.fontawesome.com/6c97c1d8e6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class=" ">
+    <!-- navbar section -->
+    <section id="nav-page" class="">
+        <!-- Navbar with anchor links -->
+        <nav class="bg-slate-100 border-b-2 border-blue-200 p-2 text-white  fixed top-0 left-0 right-0 shadow-lg z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="text-xl font-semibold flex justify-center items-center text-black">
+                    <p>English</p>
+                    <img src="assets/logo.png" alt="">
+                    <p> জানালা</p>
+                </div>
+                <ul class=" md:flex space-x-6">
+
+                    <button
+                        class="border border-blue-700 text-blue-800 px-4 py-2 rounded hover:bg-blue-400 hover:text-white"><a
+                            href="#faq" class="flex justify-center items-center hover:underline "><img
+                                src="assets/fa-circle-question.png" alt="">FAQ</a></button>
+                    <button
+                        class="border border-blue-700 text-blue-800 px-4 py-2 rounded hover:bg-blue-400 hover:text-white"><a
+                            href="#learn" class="flex justify-center items-center hover:underline "><img
+                                src="assets/fa-book-open.png" alt="">Learn</a></button>
+                    <button id="logoutBtn"
+                        class="border border-blue-700 flex justify-center items-center text-blue-800 px-4 py-2 rounded hover:bg-blue-400 hover:text-white ">
+                        <img src="assets/fa-arrow-right-from-bracket.png" alt=""> Logout</button>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- banner section -->
+
+    <section id="banner-page" class="container flex mx-auto justify-between items-center  ">
+        <div>
+            <h2 class="text-4xl font-bold mb-4 "><span class="text-blue-500">English</span> is Easy!!</h2>
+            <p class="text-sm mb-4">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা
+                বাড়াতে চান,
+                আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ </p>
+            <div id="form-section" class="">
+
+
+                <input type="text" id="name" class="w-80 block p-2 border rounded mb-3" placeholder="Enter Name">
+
+
+                <input type="password" id="password" class="w-80 block p-2 border rounded mb-4"
+                    placeholder="Enter Password (123456)">
+
+                <button id="loginBtn" onclick="handleLogin()"
+                    class="w-28 bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+                    Get Started
+                </button>
+            </div>
+        </div>
+        <div>
+            <img src="assets/hero-student.png" alt="">
+        </div>
+    </section>
+
+    <!-- Learn Section & FAQ Section -->
+
+    <section id="main-page" class="">
+
+        <div id="learn" class="  mt-16 p-10 ">
+            <div class="text-4xl font-bold mt-8  flex justify-center pt-4 gap-3 ">
+                <p class="text-blue-500">
+                    Let's </p>
+                <h1> Learn Vocabularies</h1>
+            </div>
+            <div id="button-container" class="flex justify-center gap-4 items-center mt-14">
+
+            </div>
+
+            <div id="spinner" class="text-center hidden">
+                <span class="loading loading-dots loading-xl"></span>
+            </div>
+
+            <div id="cards-container" class=" ">
+
+                <div id="card-show"
+                    class=" mt-12 bg-slate-200 h-48 flex flex-col justify-center items-center space-y-4 ">
+
+                    <h1 class="text-gray-600"> আপনি এখনো কোন Lesson Select করেননি</h1>
+                    <p class="text-3xl font-bold text-gray-700">একটি Lesson Select করুন।</p>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <button id="showModalData" class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <div id="modal-container">
+
+                    </div>
+                    <div class="modal-action justify-start">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn bg-indigo-700 text-white">Complete Learning</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
+
+
+        </div>
+
+
+
+
+        <div id="faq" class="h-screen pt-28  ">
+            <h2 class="text-4xl font-bold text-center mt-8 mb-12 "><span class="text-blue-500">Frequently</span> Asked
+                Questions</h2>
+            <div class="">
+
+
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">What is the difference between `var`, `let`, and `const`?</div>
+                    <div class="collapse-content text-sm">In JavaScript, var, let, and const are used for variable declaration, but they differ in scope and mutability: var is function-scoped and can be re-declared and reassigned, while let and const are block-scoped, let can be reassigned but not re-declared, and const cannot be reassigned or re-declared. 
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold"> what is the difference between `map()`, `forEach()`, and `filter()`?</div>
+                    <div class="collapse-content text-sm">
+                        map() will return a new array as per the conditions applied. forEach() will not return anything. forEach() returns undefined. filter() method will return an array of matching elements else
+                         will return an empty array if no matching happens.this the map,for each and filter
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">Explain arrow functions and how they are different from regular functions</div>
+                    <div class="collapse-content text-sm">
+                        1. Regular function
+                        function add(a, b) {
+                            return a + b;
+                        }
+                        ,,,
+                        2. Arrow function
+                        const add = (a, b) => a + b;
+                        .</div>
+                </div>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">How JavaScript Promises work</div>
+                    <div class="collapse-content text-sm">A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation. It helps handle async code without using callbacks,
+                         making the code more readable.</div>
+                </div>
+                <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">How closures work in JavaScript</div>
+                    <div class="collapse-content text-sm">A closure in JavaScript is created when a function remembers and has access to variables from its outer (lexical) scope, even after the outer function has finished executing.</div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-page" class="bg-emerald-100 ">
+        <div class="flex justify-between items-center p-12">
+            <div class="space-y-4">
+                <div class="text-xl flex items-center text-black">
+                    <p>English</p>
+                    <img src="assets/logo.png" alt="">
+                    <p> জানালা</p>
+
+                </div>
+
+                <h2 class="text-base">ইংরেজি শিখুন সহজে</h2>
+                <p>Providing ED-Tech Applications since 2025</p>
+
+            </div>
+            <div class="space-y-4">
+                <p>Follow Us</p>
+                <div class="flex space-x-2">
+                    <img src="assets/youtube-thumb.png" alt="" class="social-icon" data-url="https://www.youtube.com/">
+                    <img src="assets/fb-thumb.png" alt="" class="social-icon" data-url="https://www.facebook.com/">
+                    <img src="assets/instagram-thumb.png" alt="" class="social-icon"
+                        data-url="https://www.instagram.com/">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- <script src="login.js"></script>
+    <script src="fetch.js"></script>
+    <script src="logout.js"></script>
+    <script src="footer.js"></script> -->
+
+</body>
+
+</html>
