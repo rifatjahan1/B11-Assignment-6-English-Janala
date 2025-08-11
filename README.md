@@ -24,4 +24,4 @@ Download or clone the project files
 Open index.html in any web browser to start using the app
 
 LIVE DEMO:
-https://your-live-demo-link.web.app (replace with your actual link)
+https://your-live-demo-link.web.app 
