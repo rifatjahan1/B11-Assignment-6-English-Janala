@@ -1,15 +1,15 @@
-B11-Assignment-6-English-Janala
+B11-ASSIGNMENT-6-ENGLISH-JANALA
 A frontend web application focused on learning English through interactive lessons and exercises.
 
-Features:
+FEATURES:
 
 Clean, user-friendly interface for easy lesson navigation
 
-Responsive design for use on both desktop and mobile devices
+Responsive design for both desktop and mobile devices
 
 Interactive quizzes and practice exercises using JavaScript
 
-Technologies Used:
+TECHNOLOGIES USED:
 
 JavaScript
 
@@ -17,8 +17,11 @@ HTML5
 
 CSS3
 
-How to Run Locally:
+HOW TO RUN LOCALLY:
 
 Download or clone the project files
 
 Open index.html in any web browser to start using the app
+
+LIVE DEMO:
+https://your-live-demo-link.web.app (replace with your actual link)
